@@ -1,0 +1,21 @@
+digraph { graph[pad="0.5", nodesep="1.5"]; splines = false;
+a_00[shape=circle, label="a_00=2"];
+a_01[shape=circle, label="a_01=3"];
+a_10[shape=circle, label="a_10=0
+e: 0"];
+a_11[shape=circle, label="a_11=0
+e: 0"];
+a_12[shape=circle, label="a_12=0
+e: 0"];
+a_20[shape=circle, label="a_20=0
+e: 0"];
+a_00->a_10 [label = "w_00= 0.45"];
+a_00->a_11 [label = "w_00= 0.97"];
+a_00->a_12 [label = "w_00= 0.94"];
+a_01->a_10 [label = "w_01= 0.85"];
+a_01->a_11 [label = "w_01= -0.69"];
+a_01->a_12 [label = "w_01= -0.029"];
+a_10->a_20 [label = "w_10= 0.38"];
+a_11->a_20 [label = "w_11= 0.18"];
+a_12->a_20 [label = "w_12= 0.098"];
+}
