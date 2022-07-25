@@ -31,9 +31,12 @@ For do that its needed to apply these partial derivatives:
 
 $$ \frac{\partial C}{\partial w^L} \ \ and \ \ 
 \frac{\partial C}{\partial b^L}$$
+
 The derivative of the cost fuction by all the neuron inputs (weight and byas).
+
 $$\frac{\partial C}{\partial w^L} = 
 \frac{\partial C}{\partial A^L} * \frac{\partial A^L}{\partial Z^L} * \frac{\partial Z^L}{\partial w^L}$$
+
 $$\frac{\partial C}{\partial b^L} = 
 \frac{\partial C}{\partial A^L} * \frac{\partial A^L}{\partial Z^L} * \frac{\partial Z^L}{\partial b^L}$$
 
