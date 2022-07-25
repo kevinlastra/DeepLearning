@@ -2,7 +2,7 @@
 
 This 2 mini projects are made with the objective of understand the basics of machine learning.
 
-# Install 
+### Compile with 
 ```
 make
 ```
