@@ -45,18 +45,24 @@ $$\frac{\partial C}{\partial b^L} =
 $$\frac{\partial Z^L}{\partial b^L} = 1 \ \ \
 \frac{\partial Z^L}{\partial w^L} = Y^{L-1} \ \ \
 \frac{\partial C}{\partial A^L}*\frac{\partial A^L}{\partial Z^L} = \delta^L$$
-$\frac{\partial C}{\partial A^L}$ = derivative of the cost function \
+
+$\frac{\partial C}{\partial A^L}$ = derivative of the cost function 
+
 $\frac{\partial A^L}{\partial Z^L}$ = derivative of the activation function 
 
 The equation for last layer is now like this:
+
 $$\frac{\partial C}{\partial w^L} = 
 \delta^LY^{L-1}$$
+
 $$\frac{\partial C}{\partial b^L} = 
 \delta^L$$
 
 ### Propagation
 $$\delta^L = \frac{\partial C}{\partial A^L}*\frac{\partial A^L}{\partial Z^L}$$
+
 $$\delta^{L-1} = w^L\delta^L*\frac{\partial A^{L-1}}{\partial Z^{L-1}}$$
+
 $$\frac{\partial C}{\partial b^{L-1}} = \delta^{L-1} \ \ \frac{\partial C}{\partial w^{L-1}} = \delta^{L-1}*Y^{L-2}$$
 
 
