@@ -8,8 +8,12 @@ using namespace std;
 
 int main(int argc, char** argv)
 {
-  std::cout << "NEURAL NETWORK MENU" << std::endl;
-  std::cout << "Data settings:" << std::endl << std::endl;
+  std::cout << " +--------------------------------+"<<std::endl;
+  std::cout << " |          Object METHOD         |"<<std::endl;
+  std::cout << " |                                |"<<std::endl;
+  std::cout << " +--------------------------------+"<<std::endl;
+  std::cout << " made by K. LASTRA 06/2020"<<std::endl<<std::endl;
+
   int c = 1;
   
   NeuralNetwork NN;
@@ -17,6 +21,9 @@ int main(int argc, char** argv)
   NN.build();
   NN.load_neural_set();
   //NN.print_data_set();
+
+  std::cout <<std::endl<< "NEURAL NETWORK MENU" << std::endl;
+  std::cout << "Data settings:" << std::endl << std::endl;
   std::cout << std::endl;
   while(c)
   {

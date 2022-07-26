@@ -18,14 +18,14 @@ void DataManager::prepare_training_data()
   {
     file.close();
     load_training_data();
-    std::cout << "training data loaded" << std::endl;
+    std::cout << "Training data loaded" << std::endl;
   }
   else
   {
-    std::cout << "training data not loaded." << std::endl;
+    std::cout << "Training data not loaded." << std::endl;
     gen_training_data();
     save_training_data();
-    std::cout << "training data generated, trainig data saved." << std::endl;
+    std::cout << "Training data generated, trainig data saved." << std::endl;
   }
 }
 float** DataManager::get_input_data(){return training_input_data;}
@@ -96,7 +96,6 @@ void DataManager::save_training_data()
 //load
 void DataManager::load_training_data()
 {
-  std::cout << "gen?" << std::endl;
   std::ifstream file("Data/neural_data_set.txt");
   std::string line;
   int c_pos, prev_c_pos = 0;

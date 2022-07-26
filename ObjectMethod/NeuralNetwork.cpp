@@ -9,6 +9,9 @@
 
 void NeuralNetwork::build()
 {
+  std::cout << "Starting Neural network"<<std::endl;
+  std::cout << "Testing data range ("<<0<<" ,"<<DIVIDER<<")"<<std::endl;
+  std::cout << "Square area -> Bottom: "<<BOTTOM_T_DATA_SET<<"  Top: "<<TOP_T_DATA_SET<<std::endl;
   layer* layers = new layer[size];
   f_layer = &layers[0];
   l_layer = &layers[size-1];
@@ -145,7 +148,7 @@ void NeuralNetwork::load_neural_set()
       if(alayer == NULL)
 	break;
     }
-    std::cout << "data loaded" << std::endl;
+    std::cout << "Data set loaded" << std::endl;
   }
   else
     std::cout << "error neural data doesn't found" << std::endl;
