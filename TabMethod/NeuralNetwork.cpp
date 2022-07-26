@@ -123,8 +123,11 @@ void NeuralNetwork::Calc_back(int input_index)
 void NeuralNetwork::test_data()
 {
   float* test = new float[size_of_layers[0]];
+  std::cout << "Testing data" << std::endl;
+  std::cout << "Complete the inputs writing values between [0,9]" << std::endl;
   for(int i = 0; i < size_of_layers[0]; i++)
   {
+    std::cout << "Input_"<<i<<": ";
     std::cin >> test[i];
   }
   float* M;

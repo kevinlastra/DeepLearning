@@ -38,12 +38,22 @@ int main(int argc, char** argv)
     {
       int d = 0;
       int d_ = 0;
-      std::cout << "set epochs number: ";
-      std::cin >> d;
-      std::cout << std::endl;
-      std::cout << "set save epoch: ";
-      std::cin >> d_;
-      std::cout << std::endl;
+      while(true)
+      {
+        std::cout << "set epochs number: ";
+        std::cin >> d;
+        std::cout << std::endl;
+        std::cout << "set save epoch: ";
+        std::cin >> d_;
+        std::cout << std::endl;
+        if(d <= d_)
+        {
+          std::cout << "The set save epoch will be less than set epoch number" << std::endl;
+        }
+        else
+          break;
+      }
+
       std::cout << "Start learning..." << std::endl;
       NN.learn(d, d_);
     }
@@ -51,14 +61,33 @@ int main(int argc, char** argv)
     {
       float d = 0;
       float test[2];
-      std::cout << "set test data:" << std::endl;
-      std::cout << "x: ";
-      std::cin >> d;
+      std::cout << "Testing data" << std::endl;
+      std::cout << "Put a coord between [0, 100]:" << std::endl;
+      while(true)
+      {
+        std::cout << "x: ";
+        std::cin >> d;
+        if(d > 100 || d < 0)
+        {
+          std::cout << "Put a valide value [0, 100]"<<std::endl;
+        }
+        else 
+          break;
+      }
       test[0] = d;
       std::cout << std::endl;
 
-      std::cout << "y: ";
-      std::cin >> d;
+      while(true)
+      {
+        std::cout << "y: ";
+        std::cin >> d;
+        if(d > 100 || d < 0)
+        {
+          std::cout << "Put a valide value [0, 100]"<<std::endl;
+        }
+        else 
+          break;
+      }
       test[1] = d;
       std::cout << std::endl;
       NN.test(test);
