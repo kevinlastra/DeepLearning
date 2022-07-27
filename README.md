@@ -1,4 +1,4 @@
-# Machine Learning
+# Deep Learning
 
 This 2 mini projects are made with the objective of understand the basics of machine learning.
 
