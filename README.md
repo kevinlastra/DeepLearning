@@ -1,6 +1,6 @@
 # Deep Learning
 
-This 2 mini projects are made with the objective of understand the basics of machine learning.
+This 2 mini projects are made with the objective of understand the basics of deep learning.
 
 ### Compile with 
 ```
@@ -28,7 +28,7 @@ Observation
 The object method is more organized and that make it more easy for understand, learn and improve the code.
 ```
 
-# Machine Learning specifications
+# Deep Learning specifications
 
 ## Activation function
 The activation function is the function that is going to take the result of the linear function (somme of the weight and byas) and apply a modification like a relu function or a sigmoid, in this case for all the neurons the function is a sigmoid.
